@@ -31,7 +31,7 @@ def base_function():
     
     if "POD_SERVICE_ACCOUNT" in os.environ:
         pod_service_account = os.environ.get('POD_SERVICE_ACCOUNT')
-     else:
+    else:
         return render_template('error.html')
     
     return {
